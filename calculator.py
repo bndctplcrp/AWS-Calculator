@@ -1,18 +1,23 @@
 def add(x, y):
-    """Add Function"""
+    """Addition Function"""
     return x + y
 
 def subtract(x, y):
-    """Subtract Function"""
+    """Subtraction Function"""
     return x - y
 
 def multiply(x, y):
-    """Multiply Function"""
+    """Multiplication Function"""
     return x * y
 
 def divide(x, y):
-    """Divide Function"""
-    return x / y
+    """Dividion Function"""
+    try:
+        result = x / y
+        return result
+    except ZeroDivisionError:
+        return "Mathematical Error"
+    
 
 print("Select operation.")
 print("1.Add")
